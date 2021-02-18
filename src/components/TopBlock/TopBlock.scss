@@ -3,4 +3,8 @@
     height: 267px;
     background: url('../assets/img/background.png');
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+        height: 911px;
+    }
 }

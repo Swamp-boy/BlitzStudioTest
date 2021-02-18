@@ -1,19 +1,26 @@
 header {
-    //padding-top: 39px;
     //border-bottom: 1px solid white;
-    @media screen and (min-width: 768px) {
-        width: 654px;
+    @media screen and (min-width: $tablet) {
+        width: 85.2%;
         padding-top: 23px;
         height: 77px;
         border-bottom: 1px solid white;
         margin-left: 9%;
+    }
+    @media screen and (min-width: 800px) {
+        margin: 0 auto;
+    }
+    @media screen and (min-width: $desctop) {
+        width: 93%;
+        padding-top: 39px;
+        height: 61px;
     }
 }
 .header__btn {
     margin-left: 28px;
     @include menu-text;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
     }
 }
@@ -21,14 +28,23 @@ header {
     list-style: none;
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
         width: 621px;
+    }
+    @media screen and (min-width: 800px) {
+        margin: 0 auto;
+    }
+    @media screen and (min-width: $desctop) {
+        width: 592px;
     }
 }
 .navigation__element {
     margin-top: 15px;
     margin-left: 28px;
     @include menu-text;
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+    }
 }
