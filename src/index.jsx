@@ -4,5 +4,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import TopBlock from './components/TopBlock/TopBlock.jsx';
+import SecondMenuBlock from './components/SecondMenuBlock/SecondMenuBlock.jsx';
 
-ReactDOM.render(<TopBlock />, document.getElementById('root'));
+ReactDOM.render(
+    <React.Fragment>
+        <TopBlock />
+        <SecondMenuBlock />
+    </React.Fragment>, document.getElementById('root'),
+);

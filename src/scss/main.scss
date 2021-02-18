@@ -3,5 +3,12 @@
 @import 'mixins/mixins';
 
 @import './../components/Header/Header.scss';
+@import './../components/SecondMenuBlock/SecondMenuBlock.scss';
 
 @import './../components/TopBlock/TopBlock.scss';
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
