@@ -1,0 +1,7 @@
+@mixin menu-text {
+    font-family: $PTRegular;
+    color: $navText;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
