@@ -1,0 +1,20 @@
+.scroll-block__text {
+    font-family: $OSRegular;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $scrollTop;
+    text-align: center;
+    word-spacing: 5px;
+}
+.scroll-block__arrow {
+    width: 32px;
+    height: 32px;
+    margin: 22px auto 0 auto;
+}
+.scroll__arrow {
+    width: 16px;
+    height: 16px;
+    border-top: 4px solid $scrollTop;
+    border-right: 4px solid $scrollTop;
+    transform: rotate(135deg);
+}

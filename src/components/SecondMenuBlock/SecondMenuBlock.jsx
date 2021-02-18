@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
+import NavMenu from '../navMenu/navMenu.jsx';
 
 class SecondMenuBlock extends React.Component {
   render() {
     return (
         <div className="second-menu">
-            <nav className="navigation">
-                <li className="navigation__element navigation__element_gray"> HOME </li>
-                <li className="navigation__element navigation__element_gray"> ABOUT ME </li>
-                <li className="navigation__element navigation__element_gray"> PORTFOLIO </li>
-                <li className="navigation__element navigation__element_gray"> CONTACT </li>
-            </nav>
+            <NavMenu navMod="bottom" mod="black"/>
         </div>
     )
   }

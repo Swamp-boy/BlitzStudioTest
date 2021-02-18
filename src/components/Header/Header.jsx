@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import NavMenu from '../navMenu/navMenu.jsx';
 
 function headerBtnClick() {
   const list = $('.navigation');
-  list.toggle();
+  list.toggle(300);
 }
 
 class Header extends React.Component {
@@ -10,12 +11,7 @@ class Header extends React.Component {
     return (
         <header>
             <button className="header__btn" onClick = {headerBtnClick}> <span>∞</span> MENU </button>
-            <nav className="navigation">
-                <li className="navigation__element"> HOME </li>
-                <li className="navigation__element"> ABOUT ME </li>
-                <li className="navigation__element"> PORTFOLIO </li>
-                <li className="navigation__element"> CONTACT </li>
-            </nav>
+            <NavMenu navMod="top" mod="white"/>
         </header>
     )
   }

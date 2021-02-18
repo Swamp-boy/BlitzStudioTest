@@ -140,14 +140,6 @@ module.exports = {
       filename: 'index.html',
     }),
 
-    /*    //automatization HtmlWebpackPlugin
-    ...PAGES.map((page) => new HtmlWebpackPlugin({
-      template: `${PAGES_DIR}/${page}`,
-      filename: `./${page.replace(/\.pug/, '.html')}`,
-      excludeChunks: ['app'],
-    })),
-    */
-
     new CopyWebpackPlugin({
       patterns: [
         { from: `${PATHS.src}/assets/fonts`, to: `${PATHS.assets}fonts` },
@@ -160,7 +152,5 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    // new CleanWebpackPlugin(),
-    // new BundleAnalyzerPlugin(),  //to check size
   ],
 }

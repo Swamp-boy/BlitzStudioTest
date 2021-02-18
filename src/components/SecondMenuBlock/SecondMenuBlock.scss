@@ -1,8 +1,18 @@
 .second-menu {
-    border-bottom: 1px solid #bebebe;
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: block;
+        padding-top: 39px;
+        height: 61px;
+        border-bottom: 1px solid #bebebe;
+    }
 }
-.navigation__element_gray {
-    color: $greyNaavText;
+.navigation_grey {
+    width: 610px;
+    margin: 0 auto;
+}
+.navigation__element_grey {
+    color: $greyNavText;
     &:hover {
         color: black;
     }

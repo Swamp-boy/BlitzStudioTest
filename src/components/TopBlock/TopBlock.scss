@@ -4,7 +4,19 @@
     background: url('../assets/img/background.png');
     background-position: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         height: 911px;
+    }
+    @media screen and (min-width: $desctop) {
+        height: 1080px;
+    }
+}
+.top-block__scroll {
+    display: none;
+    margin-top: 853px;
+    margin-left: 43.1%;
+    width: 280px;
+    @media screen and (min-width: $desctop) {
+        display: block;
     }
 }

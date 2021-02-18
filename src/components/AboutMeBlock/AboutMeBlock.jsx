@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollBlock from '../ScrollText/ScrollText.jsx';
 
 class AboutBlock extends React.Component {
   render() {
@@ -11,6 +12,9 @@ class AboutBlock extends React.Component {
                     <p className="about-profile__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <h2 className="about-profile__name">Jason Wood</h2>
                 </div>
+            </div>
+            <div className="about__scroll">
+                <ScrollBlock text="keep scrolling, there is still more to come."/>
             </div>
 
         </div>
