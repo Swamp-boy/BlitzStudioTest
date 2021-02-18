@@ -1,0 +1,36 @@
+.about-profile__photo {
+    background: url(../assets/img/photo.png);
+    background-position: center;
+    width: auto;
+    height: 696px;
+}
+.about-profile__info {
+    padding-top: 43px;
+    padding-left: 35px;
+}
+.about-profile__title {
+    font-family: $OSRegular;
+    font-size: 30px;
+    text-align: left;
+    color: $black-text;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    word-spacing: 4px;
+}
+
+.about-profile__text {
+    margin-top: 11px;
+    line-height: 50px;
+    font-family: $OSLight;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.about-profile__name {
+    margin-top: 37px;
+    margin-left: 5px;
+    font-family: $OSLight;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: -0.3px;
+}
