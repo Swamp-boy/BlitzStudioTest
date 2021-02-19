@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import NavMenu from '../navMenu/navMenu.jsx';
 
 function headerBtnClick() {
-  const list = $('.navigation');
-  list.toggle(300);
+  const menu = document.querySelector('.navigation_top');
+  const isVisible = menu.offsetWidth > 0 || menu.offsetHeight > 0;
+
+  menu.style.display = isVisible ? 'none' : 'block';
 }
 
 class Header extends React.Component {

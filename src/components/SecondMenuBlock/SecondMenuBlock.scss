@@ -6,14 +6,8 @@
         height: 61px;
         border-bottom: 1px solid #bebebe;
     }
-}
-.navigation_grey {
-    width: 610px;
-    margin: 0 auto;
-}
-.navigation__element_grey {
-    color: $greyNavText;
-    &:hover {
-        color: black;
+    @media screen and (min-width: $desctop) {
+        width: 93.1%;
+        margin: 0 auto;
     }
 }

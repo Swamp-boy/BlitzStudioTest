@@ -1,12 +1,45 @@
+.about {
+    @media screen and (min-width: $desctop) {
+        padding-top: 75px;
+    }
+}
+.about-profile {
+    @media screen and (min-width: $desctop) {
+        display: flex;
+        //width: 78%;
+        margin-left: 8.7%;
+        margin-right: 9.5%;
+    }
+}
 .about-profile__photo {
     background: url(../assets/img/photo.png);
     background-position: center;
+    background-repeat: no-repeat;
     width: auto;
     height: 696px;
+    @media screen and (min-width: $tablet) {
+        margin: 0 auto;
+        width: 768px;
+        height: 696px;
+    }
+    @media screen and (min-width: $desctop) {
+        flex-basis: 820px;
+        width: 770px;
+        height: 700px;
+        margin-left: 0;
+    }
 }
 .about-profile__info {
     padding-top: 43px;
     padding-left: 35px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 59px;
+        padding-left: 57px;
+    }
+    @media screen and (min-width: $desctop) {
+        margin-top: 18px;
+        width: 50%;
+    }
 }
 .about-profile__title {
     font-family: $OSRegular;
@@ -14,8 +47,9 @@
     text-align: left;
     color: $black-text;
     text-transform: uppercase;
-    letter-spacing: 1.4px;
-    word-spacing: 4px;
+    @media screen and (min-width: $tablet) {
+        font-size: 60px;
+    }
 }
 .about-profile__text {
     margin-top: 11px;
@@ -24,6 +58,17 @@
     text-align: left;
     font-size: 18px;
     letter-spacing: 0.5px;
+    @media screen and (min-width: $tablet) {
+        margin-top: 61px;
+        font-size: 24px;
+    }
+}
+.about-profile__text_tablet {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: block;
+        margin-top: 24px;
+    }
 }
 .about-profile__name {
     margin-top: 37px;
@@ -32,11 +77,24 @@
     font-size: 18px;
     text-align: left;
     letter-spacing: -0.3px;
+    @media screen and (min-width: $tablet) {
+        font-size: 36px;
+        margin-top: 53px;
+    }
 }
 
 .about__scroll {
     display: none;
+    color: $grey-text;
+    .scroll-block__arrow-down {
+        color: $scrollBot;
+    }
+
     @media screen and (min-width: $tablet) {
+        margin-top: 40px;
         display: block;
+    }
+    @media screen and (min-width: $desctop) {
+        margin-top: 76px;
     }
 }

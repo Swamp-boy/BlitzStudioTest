@@ -16,7 +16,11 @@
     margin-top: 853px;
     margin-left: 43.1%;
     width: 280px;
+    .scroll-block__arrow-down {
+        color: $navText;
+    }
     @media screen and (min-width: $desctop) {
         display: block;
+        color: $navText;
     }
 }

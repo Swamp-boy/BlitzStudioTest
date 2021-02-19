@@ -9,7 +9,7 @@
 .scroll-block__arrow {
     width: 32px;
     height: 32px;
-    margin: 22px auto 0 auto;
+    margin: 36px auto 0;
 }
 .scroll__arrow {
     width: 16px;
@@ -17,4 +17,9 @@
     border-top: 4px solid $scrollTop;
     border-right: 4px solid $scrollTop;
     transform: rotate(135deg);
+}
+.scroll-block__arrow-down {
+    display: block;
+    margin-top: -18px;
+    font-size: 32px;
 }

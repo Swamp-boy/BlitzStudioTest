@@ -7,7 +7,12 @@ class ScrollBlock extends React.Component {
     <div className="scroll-block">
         <p className="scroll-block__text"> {this.props.text} </p>
         <div className="scroll-block__arrow">
-            <img src="./../../assets/img/doubleArrow.png" alt=""/>
+          <span className="scroll-block__arrow-down">
+            <i className="fas fa-chevron-down"></i>
+          </span>
+          <span className="scroll-block__arrow-down">
+            <i className="fas fa-chevron-down"></i>
+          </span>
         </div>
     </div>
     )
